@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Veementium Labs.</title>
+    <!-- Windows XP Theme (include only one theme at a time) -->
+    <link rel="stylesheet" href="xp.css">
+  </head>
+  <body>
+    <div class="window" style="margin: 32px; width: 270px">
+      <div class="title-bar" style="text-align: center;">
+        <div class="title-bar-text" style="text-align: right;">Ricerca
+          Veementium Labs.</div>
+        <div class="title-bar-controls" style="text-align: right;"> <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button> <button aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-body" style="text-align: center;">
+        <div style="text-align: left;">Benvenuto al sito ufficiale
+          dell'associazione di </div>
+        <div style="text-align: left;">ricerca e studio Veementium. Qui potrai
+          trovare</div>
+        <div style="text-align: left;">varie ricerche su svariati argomenti, tra
+          cui Biologia, Medicina, Telecomunicazioni, Elettronica e molto </div>
+        <div style="text-align: left;">altro. Tutte le ricerche sono senza
+          influenze da fonti</div>
+        <div style="text-align: left;">esterne e completamente studiate nel
+          nostro laboratorio.</div>
+        <div style="text-align: left;"><br>
+        </div>
+        <a href="http://www.google.com/"> <input value="Visit Google" type="button">
+        </a><br>
+      </div>
+    </div>
+  </body>
+</html>
