@@ -1,0 +1,88 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+var swf = false;
+var swfAllow = (window.location.search.indexOf('flash=0')+1) ? false : true;
+
+function hasFlash(ver) {
+  if(!swfAllow) return false;
+  if(!ver) ver = 0;
+	var n = navigator;
+  if(n.plugins && n.plugins.length > 0) {
+    var m,t,d,v;
+    m = n.mimeTypes;
+    t = 'application/x-shockwave-flash';
+    if(m && m[t] && m[t].enabledPlugin && m[t].enabledPlugin.description) {
+      d = m[t].enabledPlugin.description;
+      v = d.charAt(d.indexOf('.')-1);
+			swf = (v >= ver) ? true : false;
+    }
+  } else if(n.appVersion.indexOf("Mac") == -1 && window.execScript) {
+    for(var i=ver; i<=7&&i!=1&&swf!=true; i++) {
+      execScript('on error resume next: swf=IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash'+((i==0)?'':'.'+i)+'"))','VBScript');
+    }
+	} else {
+	  swf = false;
+	}
+	return swf;
+}
+
+function switchFlash() {
+  var val = (swfAllow) ? '0' : '1';
+	var s = window.location.href.split('#')[0];
+  if(window.location.search) {
+	  if(s.indexOf('flash=')+1) {
+		  s = s.replace('flash='+s.split('flash=')[1].split('&')[0],'flash='+val);
+		} else {
+		  s += '&flash='+val;
+		}
+	} else {
+	  s += '?flash='+val;
+	}
+	window.location.href = s;
+}
+
+function allowFlash() {
+  if((!hasFlash(5)) && (swfAllow)) return '';
+  var s = '<a href="#" onclick="switchFlash(); return false;" class="headerLnk">+ ';
+	s += (swfAllow) ? 'Non-Flash Version' : 'Flash Version' ;
+	s += '</a><br />';
+	return s;
+}
+
+
+function moveFocus(id) {
+  var o = document.getElementById(id);
+	if(o) o.focus();
+}
+
+}
+/*
+     FILE ARCHIVED ON 16:53:56 Aug 22, 2004 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 17:07:06 Jul 11, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.454
+  exclusion.robots: 0.023
+  exclusion.robots.policy: 0.014
+  esindex: 0.01
+  cdx.remote: 5.998
+  LoadShardBlock: 67.524 (3)
+  PetaboxLoader3.datanode: 61.566 (4)
+  PetaboxLoader3.resolve: 262.216 (2)
+  load_resource: 279.105
+*/
