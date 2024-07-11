@@ -1,0 +1,103 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+var ToolBar_Supported = ToolBar_Supported ;
+if (ToolBar_Supported != null && ToolBar_Supported == true)
+{
+	//To Turn on/off Frame support, set Frame_Supported = true/false.
+	Frame_Supported = false;
+
+	// Customize default ICP menu color - bgColor, fontColor, mouseoverColor
+	setDefaultICPMenuColor("#0099FF", "white", "red");
+	
+	// Customize toolbar background color
+	//setToolbarBGColor("white");
+	setBannerColor("#0099FF", "#0099FF", "White", "red");
+
+	// display ICP Banner
+	setICPBanner("/library/homepage/images/mslogo-blue.gif","/isapi/gomscom.asp?target=/","Microsoft Home") ;
+	
+	//***** Add ICP menus *****
+	//Home
+	addICPMenu("HomeMenu", "Home", "Microsoft Home","/isapi/gomscom.asp?target=/");
+	
+	//Events & Training
+	addICPMenu("EventsMenu", "Training/Events", "","/isapi/gomscom.asp?target=/trainingandservices/");
+	addICPSubMenu("EventsMenu","Training & Certification","/isapi/gomscom.asp?target=/trainingandservices/");
+	addICPSubMenu("EventsMenu","Events","/isapi/gomscom.asp?target=/usa/events/");
+ 
+	//Subscribe
+	addICPMenu("SubscribeMenu", "Subscribe", "","https://web.archive.org/web/20010801155211/http://register.microsoft.com/regsys/decisionpoint.asp?FU=http://register.microsoft.com/regsys/pic.asp");
+	addICPSubMenu("SubscribeMenu","Newsletters","https://web.archive.org/web/20010801155211/http://register.microsoft.com/regsys/decisionpoint.asp?FU=http://register.microsoft.com/regsys/pic.asp");
+	addICPSubMenu("SubscribeMenu","Free E-Mail Account","https://web.archive.org/web/20010801155211/http://www.hotmail.com/");
+	addICPSubMenu("SubscribeMenu","Messenger Service","https://web.archive.org/web/20010801155211/http://messenger.msn.com/");
+	addICPSubMenu("SubscribeMenu","Manage Your Profile","https://web.archive.org/web/20010801155211/http://register.microsoft.com/regsys/decisionpoint.asp?FU=http://register.microsoft.com/regsys/pic.asp");
+	
+	//About Microsoft
+	addICPMenu("MicrosoftMenu", "About Microsoft", "","/isapi/gomscom.asp?target=/mscorp/");
+	addICPSubMenu("MicrosoftMenu","Company Overview","/isapi/gomscom.asp?target=/mscorp/");
+	addICPSubMenu("MicrosoftMenu","Inside Our Site","/isapi/gomscom.asp?target=/backstage/");
+
+	//Downloads
+	addICPMenu("DownloadMenu", "Downloads", "","/isapi/gomscom.asp?target=/downloads/");
+	addICPSubMenu("DownloadMenu","Download Center","/isapi/gomscom.asp?target=/downloads/");
+	addICPSubMenu("DownloadMenu","Windows Update","https://web.archive.org/web/20010801155211/http://windowsupdate.microsoft.com/");
+	addICPSubMenu("DownloadMenu","Office Update","https://web.archive.org/web/20010801155211/http://office.microsoft.com/downloads");
+
+	//International
+	addICPMenu("InternationalMenu", "Worldwide", "","/isapi/gomscom.asp?target=/worldwide/");
+	addICPSubMenu("InternationalMenu","Microsoft.com Worldwide","/isapi/gomscom.asp?target=/worldwide/");
+	addICPSubMenu("InternationalMenu","US Sites & Offices","/isapi/gomscom.asp?target=/usa/");
+	addICPSubMenu("InternationalMenu","MSN Worldwide","https://web.archive.org/web/20010801155211/http://www.msn.com/wwcon/intl_map.asp");
+
+	//MSN.COM
+	addICPMenu("MSNMenu", "MSN", "","https://web.archive.org/web/20010801155211/http://msn.com/");
+	addICPSubMenu("MSNMenu","Autos","https://web.archive.org/web/20010801155211/http://carpoint.msn.com/homepage/");
+	addICPSubMenu("MSNMenu","Computing","https://web.archive.org/web/20010801155211/http://computingcentral.msn.com/");
+	addICPSubMenu("MSNMenu","Games","https://web.archive.org/web/20010801155211/http://zone.msn.com/");
+	addICPSubMenu("MSNMenu","Instant Messaging","https://web.archive.org/web/20010801155211/http://messenger.msn.com/");
+	addICPSubMenu("MSNMenu","Internet Access","https://web.archive.org/web/20010801155211/http://essentials.msn.com/access/");
+	addICPSubMenu("MSNMenu","MSN Explorer","https://web.archive.org/web/20010801155211/http://explorer.msn.com/");
+	addICPSubMenu("MSNMenu","Music","https://web.archive.org/web/20010801155211/http://music.windowsmedia.msn.com/");
+	addICPSubMenu("MSNMenu","Newsletters","https://web.archive.org/web/20010801155211/http://newsletters.msn.com/signin.asp?SN=11");
+	addICPSubMenu("MSNMenu","Personal Finance","https://web.archive.org/web/20010801155211/http://moneycentral.msn.com/");
+	addICPSubMenu("MSNMenu","MSN Search","https://web.archive.org/web/20010801155211/http://search.msn.com/");
+	addICPSubMenu("MSNMenu","Shopping","https://web.archive.org/web/20010801155211/http://eshop.msn.com/");
+	addICPSubMenu("MSNMenu","MSN Worldwide","https://web.archive.org/web/20010801155211/http://www.msn.com/wwcon/intl_map.asp");
+
+	addICPFooterMenu("Contact Us", "/isapi/goregwiz.asp?target=/contactus/contactus.asp");
+	addICPFooterMenu("Microsoft This Week! Newsletter", "/isapi/gomscom.asp?target=/misc/mstw/");
+	addICPFooterMenu("Text Only", "/isapi/gomscom.asp?target=/default_text.htm");
+}
+
+
+}
+/*
+     FILE ARCHIVED ON 15:52:11 Aug 01, 2001 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:21:18 Jul 11, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.428
+  exclusion.robots: 0.023
+  exclusion.robots.policy: 0.014
+  esindex: 0.009
+  cdx.remote: 8.181
+  LoadShardBlock: 490.608 (3)
+  PetaboxLoader3.datanode: 179.475 (4)
+  PetaboxLoader3.resolve: 441.518 (3)
+  load_resource: 260.164
+*/
