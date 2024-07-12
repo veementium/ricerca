@@ -4,9 +4,11 @@
     <title>Home</title>
   </head>
   <body>
-    <p align="center"> <img src="9e10db0d3b6a7495a5cd620b84faf8f2.png" height="61"
+    <p align="center"> <img src="9e10db0d3b6a7495a5cd620b84faf8f2.png" height="61"
+
         width="678" border="0"></p>
-    <table style="width: 1077px; height: 29px; text-align: left; margin-left: auto; margin-right: auto;"
+    <table style="width: 1077px; height: 29px; text-align: left; margin-left: auto; margin-right: auto;"
+
       border="1">
       <tbody>
         <tr>
@@ -21,15 +23,18 @@
       <div style="text-align: center;">
         <blockquote>
           <blockquote>
-            <p style="text-align: center; background-color: #010201;"><span style="color: white;"><span><b><font
+            <p style="text-align: center; background-color: #010201;"><span style="color: white;"><span><b><font
+
                       size="6">&lt; - + Categorie + - &gt;<br>
                     </font></b></span></span></p>
           </blockquote>
         </blockquote>
       </div>
     </blockquote>
-    <p align="center"><a href="biologia.htm"> <img src="biologia.jpg" height="260"
-          width="200" border="0"></a>&nbsp;&nbsp; <a href="elettronica.htm"> <img
+    <p align="center"><a href="biologia.htm"> <img src="biologia.jpg" height="260"
+
+          width="200" border="0"></a>&nbsp;&nbsp; <a href="elettronica.htm"> <img
+
           src="tahoma.jpg" height="260" width="200" border="0"></a></p>
   </body>
 </html>

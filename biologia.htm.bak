@@ -1,9 +1,34 @@
-<title>Biologia</title>
-<p align="center">
-<img border="0" src="9e10db0d3b6a7495a5cd620b84faf8f2.png" width="678" height="61"></p>
-<p align="left">
-<!--webbot bot="Navigation" S-Orientation="horizontal" S-Rendering="graphics" S-Type="children" B-Include-Home="TRUE" B-Include-Up="TRUE" S-Theme="slate 0000" startspan --><a href="home.htm"><img src="_derived/home_cmp_slate000_hbtn.gif" width="145" height="21" border="0" alt="Home" align="middle"></a><!--webbot bot="Navigation" i-checksum="17805" endspan --></p>
-<hr>
-<p align="center"><b><font size="6" color="#FFFFFF">
-<span style="background-color: #000000">BIOLOGIA</span></font></b></p>
-<p align="center"><img border="0" src="acqua.jpg" width="200" height="260"></p>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    <div style="text-align: center;"><img src="9e10db0d3b6a7495a5cd620b84faf8f2.png"
+        height="61" width="678" border="0"></div>
+    <p></p>
+    <table style="width: 1077px; height: 29px; text-align: left; margin-left: auto; margin-right: auto;"
+      border="1">
+      <tbody>
+        <tr>
+          <td>Pagina ufficiale dell'associazione di ricerca Veementium. Il sito
+            è attualmente in costruzione, presto verranno aggiunte nuove
+            funzioni e migliorata la struttura.</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr><span> </span>
+    <blockquote>
+      <div style="text-align: center;">
+        <blockquote>
+          <blockquote>
+            <p style="text-align: center; background-color: #010201;"><span style="color: white;"><span><b><font
+                      size="6"><b><font size="6" color="#FFFFFF"><span style="background-color: #000000">+
+                            BIOLOGIA +</span></font></b> </font></b></span></span></p>
+            <p align="center"><b><font size="6"><img src="acqua.jpg" height="260"
+                    width="200" border="0"></font></b></p>
+            <b><font size="6"> </font></b></blockquote>
+        </blockquote>
+      </div>
+    </blockquote>
+  </body>
+</html>
